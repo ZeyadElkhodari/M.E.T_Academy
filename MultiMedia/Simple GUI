@@ -1,0 +1,22 @@
+import tkinter as tk
+
+# نافذة البرنامج
+window = tk.Tk()
+window.title("Simple GUI")
+window.geometry("300x200")
+
+# الدالة التي تغيّر الكلام ولون الخلفية
+def change_text():
+    label.config(text="تم الضغط على الزر")
+    window.config(bg="#d1f7c4")   # لون أخضر فاتح بعد الضغط
+
+# النص
+label = tk.Label(window, text="أهلاً!", font=("Arial", 16))
+label.pack(pady=20)
+
+# الزر
+button = tk.Button(window, text="اضغط هنا", command=change_text)
+button.pack()
+
+# تشغيل البرنامج
+window.mainloop()
