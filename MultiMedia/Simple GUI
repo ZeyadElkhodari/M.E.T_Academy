@@ -11,7 +11,7 @@ def change_text():
     window.config(bg="#d1f7c4")   # لون أخضر فاتح بعد الضغط
 
 # النص
-label = tk.Label(window, text="أهلاً!", font=("Arial", 16))
+label = tk.Label(window, text="! أهلاً", font=("Arial", 16))
 label.pack(pady=20)
 
 # الزر
